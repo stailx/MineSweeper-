@@ -6,6 +6,7 @@ import sys
 sys.setrecursionlimit(5000)
 taille = 24
 demitaille=12
+PATH="Assets/"
 
 def mine(event):
     global continu
@@ -19,7 +20,7 @@ def mine(event):
    
     x=int((event.x+xscroll.get()[0]*500*taille)//taille)
     y=int((event.y+yscroll.get()[0]*500*taille)//taille)
-    print(x,y)
+    #print(x,y)
     
     global minetab
     if (continu):
@@ -49,7 +50,7 @@ def minecase(x,y):
         casemine[x+500*y]=1 #la case à été exploré 
         if (minetab[x+500*y]==1):
             fenetreToplevel=Toplevel(window)
-            text=Label(fenetreToplevel, text="Tu as perdu sale fils de pute de suisse qui bouffe du chocolat pour se consoller de sa vie de merde où il ne peux même pas patrtir en vacance lol tu as le seum.")
+            text=Label(fenetreToplevel, text="Perdu")
             global continu
             continu=0
             nom="save.txt"
@@ -287,29 +288,29 @@ yscroll["command"]=can.yview
 can['xscrollcommand']=xscroll.set
 can['yscrollcommand']=yscroll.set
 
-imageflag = Image.open("flag.PNG") 
+imageflag = Image.open(PATH+"flag.PNG") 
 photoflag = ImageTk.PhotoImage(imageflag)
-image0 = Image.open("0.PNG") 
+image0 = Image.open(PATH+"0.PNG") 
 photo0 = ImageTk.PhotoImage(image0) 
-image1 = Image.open("1.PNG") 
+image1 = Image.open(PATH+"1.PNG") 
 photo1 = ImageTk.PhotoImage(image1)
-image2 = Image.open("2.PNG") 
+image2 = Image.open(PATH+"2.PNG") 
 photo2 = ImageTk.PhotoImage(image2)
-image3 = Image.open("3.PNG") 
+image3 = Image.open(PATH+"3.PNG") 
 photo3 = ImageTk.PhotoImage(image3)
-image4 = Image.open("4.PNG") 
+image4 = Image.open(PATH+"4.PNG") 
 photo4 = ImageTk.PhotoImage(image4)
-image5 = Image.open("5.PNG") 
+image5 = Image.open(PATH+"5.PNG") 
 photo5 = ImageTk.PhotoImage(image5)
-image6 = Image.open("6.PNG") 
+image6 = Image.open(PATH+"6.PNG") 
 photo6 = ImageTk.PhotoImage(image6)
-image7 = Image.open("7.PNG") 
+image7 = Image.open(PATH+"7.PNG") 
 photo7 = ImageTk.PhotoImage(image7)
-image8 = Image.open("8.PNG") 
+image8 = Image.open(PATH+"8.PNG") 
 photo8 = ImageTk.PhotoImage(image8)
-imagebomb = Image.open("bomb.PNG") 
+imagebomb = Image.open(PATH+"bomb.PNG") 
 photobomb = ImageTk.PhotoImage(imagebomb)
-imagebombexplose = Image.open("bombexplose.PNG") 
+imagebombexplose = Image.open(PATH+"bombexplose.PNG") 
 photobombexplose = ImageTk.PhotoImage(imagebombexplose)
 
 textlabel=""
