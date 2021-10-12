@@ -6,5 +6,5 @@ Python Minesweeper Implementation in Tkinter.
 -Adjustable difficulty
 -Save and Load
 
-![Screenshot](https://github.com/stailx/MineSweeper-/new/main/Screenshot.png)
+![Screenshot](https://github.com/stailx/MineSweeper-/tree/main/ReadMe/screenshot.png)
 
